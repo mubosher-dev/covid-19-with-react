@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  transition: all .4s ease-in-out;
+  font-weight: 500;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: rgba(189, 186, 189, 0.333);
+}
+
+.app{
+  padding: 10px 30px;
+}
+
+/* header styles start */
+.app__header{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding:15px 0;
+  justify-content: space-between;
+}
+
+.app__dropdown{
+  width: 300px;
+}
+
+.app__dropdown > .MuiOutlinedInput-root > fieldset > legend {
+  display: none !important;
+}
+
+@media screen and (max-width:768px) {
+  .app__header {
+    justify-content: center;
+  }
+  .app__header h1 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width:460px) {
+  .app__header {
+    padding: 1rem;
+  }
+}
+
+
+/* header styes finish */
